@@ -45,6 +45,18 @@ Build bittiğinde proje kökünde **`out/`** klasörü oluşur. Yayınlanacak ol
 
 > Not: `out/` klasörü Git'e dahil değildir (`.gitignore`). Her güncellemede yeniden build alınıp hosting'e yüklenmelidir.
 
+### Natro (cPanel) ile yükleme — adım adım
+
+1. **Belge kökünü bul:** cPanel → **Domains** → `mscinsaat11.com` satırındaki **Document Root** yolunu not al (örn. `.../nossglobal.com/mscinsaat11`).
+2. **Dosya Yöneticisi'ni aç:** cPanel → **Dosya Yöneticisi** → o klasöre gir.
+3. **Eski içeriği temizle:** Klasördeki eski site dosyalarını sil (`.html` dosyaları, eski `assets/` klasörü vb.). Varsa `.htaccess`'e **dokunma**.
+4. **Zip hazırla:** Lokalde `out` klasörünün **içeriğini** zip'le (klasörün kendisini değil).
+5. **Yükle:** Dosya Yöneticisi'nde **Yükle** ile zip'i at.
+6. **Çıkar:** Yüklenen zip'e sağ tık → **Çıkar / Extract**. Sonra zip dosyasını sil.
+7. **Kontrol:** `index.html` doğrudan belge kökünde olmalı. Tarayıcıdan `https://www.mscinsaat11.com` aç.
+
+> Diğer domainler (`mscinsaat11.com.tr`, `mscinsaat11.xyz`) için dosya yüklenmez; sadece `www.mscinsaat11.com`'a 301 yönlendirilir (bkz. aşağıdaki SEO bölümü).
+
 ## Site URL ve SEO ayarı
 
 SEO metadata, canonical URL, Open Graph paylaşım linkleri, `robots.txt` ve `sitemap.xml` için gerçek site adresi `NEXT_PUBLIC_SITE_URL` değişkeninden okunur ve **build sırasında dosyalara gömülür**.
@@ -63,6 +75,26 @@ Deploy sonrası kontrol edilecek adresler:
 https://www.mscinsaat11.com/sitemap.xml
 https://www.mscinsaat11.com/robots.txt
 ```
+
+### Birden fazla domain (301 yönlendirme)
+
+Asıl (canonical) domain **`www.mscinsaat11.com`**'dur; site sadece buraya yüklenir. Diğer domainler aynı içeriğe yönlendirilmelidir (SEO'da kopya içerik olmaması için):
+
+| Domain                | Rol                               |
+| --------------------- | --------------------------------- |
+| `www.mscinsaat11.com` | **ASIL** — `out/` buraya yüklenir |
+| `mscinsaat11.com.tr`  | → `www.mscinsaat11.com`'a 301     |
+| `mscinsaat11.xyz`     | → `www.mscinsaat11.com`'a 301     |
+
+Yönlendirme, hosting panelinden ("Redirects / Yönlendirme") veya belge köküne eklenen `.htaccess` ile yapılır:
+
+```apache
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.mscinsaat11\.com$ [NC]
+RewriteRule ^(.*)$ https://www.mscinsaat11.com/$1 [R=301,L]
+```
+
+Üç domain için de SSL (Let's Encrypt) aktif olmalıdır.
 
 ## Site içeriğini güncelleme
 
