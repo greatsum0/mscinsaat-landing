@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section } from "./Section";
@@ -7,7 +6,7 @@ import { SectionHead } from "./SectionHead";
 interface ReferenceItem {
   key: string;
   displayName: string;
-  imageUrl: string;
+  subtitle: string;
 }
 
 interface ReferencesSectionProps {
@@ -26,9 +25,9 @@ interface ReferencesSectionProps {
   className?: string;
 }
 
-// Statik logo bulutu (çerçevesiz): logolar grayscale + soluk, hover'da
-// renklenir. Varsayılan olarak ilk 8 logo (4'lü iki sıra) gösterilir; daha
-// fazla referans varsa altta "Tümünü Gör" butonu çıkar. Marquee/hareket yok.
+// Referans kartları: her kart kurum adı (title) ve yapılan işi anlatan bir alt
+// başlık (subtitle) içerir; görsel yoktur. Varsayılan olarak ilk 8 kart
+// gösterilir; daha fazla referans varsa altta "Tümünü Gör" butonu çıkar.
 const VISIBLE_COUNT = 8;
 
 export function ReferencesSection({
@@ -54,16 +53,14 @@ export function ReferencesSection({
         description={description}
       />
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12 items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {visible.map((ref) => (
-          <div key={ref.key} className="group relative h-10 sm:h-12">
-            <Image
-              src={ref.imageUrl}
-              alt={ref.displayName}
-              fill
-              sizes="(max-width: 1024px) 50vw, 25vw"
-              className="object-contain grayscale opacity-55 mix-blend-multiply transition duration-300 group-hover:grayscale-0 group-hover:opacity-100"
-            />
+          <div
+            key={ref.key}
+            className="card-base bg-white shadow-[var(--shadow-medium)] p-6"
+          >
+            <strong className="block text-lg leading-snug">{ref.displayName}</strong>
+            <p className="text-sm text-gray leading-relaxed mt-2">{ref.subtitle}</p>
           </div>
         ))}
       </div>
