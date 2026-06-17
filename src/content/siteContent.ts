@@ -119,81 +119,69 @@ export const siteContent = {
       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80",
   },
 
-  // Referans / iş ortağı logoları (mock). UI'da her zaman ilk 6 öğe gösterilir;
-  // 6'dan fazla öğe varsa "Tümünü Gör" butonu çıkar. Gerçek logolarla
-  // değiştirmek için her öğenin imageUrl alanını güncellemek yeterli.
+  // Referans kartları (mock). UI'da her zaman ilk 8 öğe gösterilir; 8'den fazla
+  // öğe varsa "Tümünü Gör" butonu çıkar. Her kart kurum adını (displayName) ve
+  // yapılan işi (subtitle) gösterir; görsel kullanılmaz.
   references: [
     {
       key: "acme-yapi",
       displayName: "Acme Yapı",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/0aaea0/png?text=ACME+YAPI&font=montserrat",
+      subtitle: "Anahtar teslim fabrika inşaatı",
     },
     {
       key: "nova-endustri",
       displayName: "Nova Endüstri",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/2563eb/png?text=NOVA&font=montserrat",
+      subtitle: "Endüstriyel tesis taahhüdü",
     },
     {
       key: "kaya-insaat",
       displayName: "Kaya İnşaat",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/ea580c/png?text=KAYA&font=montserrat",
+      subtitle: "Yapı taahhüt ve uygulama",
     },
     {
       key: "delta-lojistik",
       displayName: "Delta Lojistik",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/7c3aed/png?text=DELTA&font=montserrat",
+      subtitle: "Lojistik depo ve antrepo yapımı",
     },
     {
       key: "orion-fabrika",
       displayName: "Orion Fabrika",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/0891b2/png?text=ORION&font=montserrat",
+      subtitle: "Üretim tesisi anahtar teslim",
     },
     {
       key: "vertex-yapi",
       displayName: "Vertex Yapı",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/dc2626/png?text=VERTEX&font=montserrat",
+      subtitle: "Yapı çözümleri ve dekorasyon",
     },
     {
       key: "polaris-grup",
       displayName: "Polaris Grup",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/059669/png?text=POLARIS&font=montserrat",
+      subtitle: "Devlet ihalesi taahhüt işi",
     },
     {
       key: "atlas-seramik",
       displayName: "Atlas Seramik",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/d97706/png?text=ATLAS&font=montserrat",
+      subtitle: "Seramik tedarik ve uygulama",
     },
     {
       key: "meridyen-yapi",
       displayName: "Meridyen Yapı",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/0d9488/png?text=MERIDYEN&font=montserrat",
+      subtitle: "Yap-sat konut projesi",
     },
     {
       key: "zenit-insaat",
       displayName: "Zenit İnşaat",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/9333ea/png?text=ZENIT&font=montserrat",
+      subtitle: "Taahhüt ve inşaat yönetimi",
     },
     {
       key: "kuzey-grup",
       displayName: "Kuzey Grup",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/0284c7/png?text=KUZEY&font=montserrat",
+      subtitle: "Ticari yapı inşaatı",
     },
     {
       key: "ege-seramik",
       displayName: "Ege Seramik",
-      imageUrl:
-        "https://placehold.co/240x80/ffffff/c026d3/png?text=EGE&font=montserrat",
+      subtitle: "Seramik satışı ve uygulama",
     },
   ],
 
