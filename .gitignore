@@ -42,4 +42,10 @@ next-env.d.ts
 *.md
 .git.old
 !README.md
-/out
+/out_media_originals/
+*.jpg
+*.JPG
+*.jpeg
+*.mp4
+tools/
+*.webp
