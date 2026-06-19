@@ -23,13 +23,13 @@ export const siteContent = {
   },
 
   contact: {
-    phone: "+90 500 000 00 00",
-    phoneHref: "tel:+905000000000",
-    email: "info@mscinssaat.com",
-    emailHref: "mailto:info@mscinssaat.com",
-    whatsappNumber: "905000000000",
+    phone: "+90 532 155 58 11",
+    phoneHref: "tel:+905321555811",
+    email: "info@mscinsaat.com",
+    emailHref: "mailto:info@mscinsaat.com",
+    whatsappNumber: "905321555811",
     whatsappHref:
-      "https://wa.me/905000000000?text=Merhaba%20MSÇ%20İnşaat%20hakkında%20bilgi%20almak%20istiyorum.",
+      "https://wa.me/+905321555811?text=Merhaba%20MSÇ%20İnşaat%20hakkında%20bilgi%20almak%20istiyorum.",
     location: "Türkiye Geneli Hizmet",
     workingHours: "Pzt - Cmt / 09:00 - 18:00",
     topbarLeft: "Türkiye Geneli Profesyonel Yapı Çözümleri",
@@ -97,10 +97,8 @@ export const siteContent = {
     favicon: "/mscfavicon.svg",
     ogImage: "/msclogoog.png",
     heroVideo: "/hero.mp4",
-    about:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80",
-    aboutHero:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
+    about: "",
+    aboutHero: "/halmeydan.webp",
     aboutStory:
       "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1200&q=80",
     aboutStoryTeam:
@@ -115,8 +113,7 @@ export const siteContent = {
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
     projectFeatured:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
-    projectApproach:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80",
+    projectApproach: "/showroom.webp",
   },
 
   // Referans kartları (mock). UI'da her zaman ilk 8 öğe gösterilir; 8'den fazla
@@ -125,63 +122,71 @@ export const siteContent = {
   references: [
     {
       key: "acme-yapi",
-      displayName: "Acme Yapı",
-      subtitle: "Anahtar teslim fabrika inşaatı",
+      displayName: "SAYDAM OTOMASYON ENERJİ SAN. VE TİC. LTD. ŞTİ.",
+      subtitle:
+        "Prefabrik Bina Temelleri, Soket ve Kirişleri, Perde Betonları ve Saha Betonları",
     },
     {
       key: "nova-endustri",
-      displayName: "Nova Endüstri",
-      subtitle: "Endüstriyel tesis taahhüdü",
+      displayName: "ECZACIBAŞI ESAN ENDÜSTRİYEL HAMMADDELER A.Ş. – BİLECİK",
+      subtitle:
+        "Arıtma Havuzları, İstinat Duvarları, Saha Betonları Temizlik İşleri Yapımı ve Onarım İşleri",
     },
     {
       key: "kaya-insaat",
-      displayName: "Kaya İnşaat",
-      subtitle: "Yapı taahhüt ve uygulama",
+      displayName: "TERMAL SERAMİK SAN. VE TİC. A.Ş. – SÖĞÜT / BİLECİK",
+      subtitle:
+        "2. Fabrika İlave Kapalı Alan Temeli, Perde Betonları ve Saha Betonları",
     },
     {
       key: "delta-lojistik",
-      displayName: "Delta Lojistik",
-      subtitle: "Lojistik depo ve antrepo yapımı",
+      displayName: "AKGÜN TOPRAK SAN. İNŞ. VE TİC. A.Ş. – ESKİŞEHİR",
+      subtitle:
+        "Fabrika Çiti ve KedaPres Temelleri, Makine Temelleri ve Saha Betonları",
     },
     {
       key: "orion-fabrika",
-      displayName: "Orion Fabrika",
-      subtitle: "Üretim tesisi anahtar teslim",
+      displayName: "BİLECİK İL ÖZEL İDARESİ",
+      subtitle: "Bilecik Gölpazarı Şehit Kemal Ay Lisesi Yapımı",
     },
     {
       key: "vertex-yapi",
-      displayName: "Vertex Yapı",
-      subtitle: "Yapı çözümleri ve dekorasyon",
+      displayName: "BİLECİK / GÖLPAZARI",
+      subtitle:
+        "21 Derslikli İmam Hatip Lisesi, 100 Öğrenci KapasiteliPansiyon Binası, Tatbikat Camii ve Çevre Düzenlemesi Yapım İşi",
     },
     {
       key: "polaris-grup",
-      displayName: "Polaris Grup",
-      subtitle: "Devlet ihalesi taahhüt işi",
+      displayName: "VALİLİK (YİKOP) İÇİŞLERİ BAKANLIĞI MÜSTEŞARLIK",
+      subtitle:
+        "Eskişehir Çankaya İlk Öğretim Okulu ve Çevre Düzenlemesi Yapımı",
     },
     {
       key: "atlas-seramik",
-      displayName: "Atlas Seramik",
-      subtitle: "Seramik tedarik ve uygulama",
+      displayName: "AFYON İL ÖZEL İDARESİ",
+      subtitle: "Bolvadin 24 Derslikli Teknik Lise Yapımı ve Çevre Düzenlemesi",
     },
     {
       key: "meridyen-yapi",
-      displayName: "Meridyen Yapı",
-      subtitle: "Yap-sat konut projesi",
+      displayName: "BOZÜYÜK BELEDİYESİ",
+      subtitle: "Akpınar Mahalle Konağı Yapım İşi",
     },
     {
       key: "zenit-insaat",
-      displayName: "Zenit İnşaat",
-      subtitle: "Taahhüt ve inşaat yönetimi",
+      displayName: "BOZÜYÜK BELEDİYESİ",
+      subtitle: "Yediler Mahalle Konağı Yapım İşi",
     },
     {
       key: "kuzey-grup",
-      displayName: "Kuzey Grup",
-      subtitle: "Ticari yapı inşaatı",
+      displayName: "TEPEBAŞI BELEDİYESİ / ESKİŞEHİR",
+      subtitle:
+        "Tepebaşı Belediyesi Sınırları İçerisinde Halı Sahalar ve Tesis Binaları Yapım İşi",
     },
+
     {
-      key: "ege-seramik",
-      displayName: "Ege Seramik",
-      subtitle: "Seramik satışı ve uygulama",
+      key: "zenit-insaat",
+      displayName: "BOZÜYÜK BELEDİYESİ",
+      subtitle: "Hal Meydanı ve Cumhuriyet Meydanı Projesi",
     },
   ],
 
@@ -403,38 +408,75 @@ export const siteContent = {
       ctaLabel: "Projeyi Gör",
       projects: [
         {
-          category: "fabrika",
-          tag: "Fabrika",
-          title: "Endüstriyel Üretim Tesisi",
-          description: "Kaba yapı, ince işçilik ve çevre düzenleme uygulaması.",
-          image:
-            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+          category: "konut",
+          tag: "Yap-Sat",
+          title: "MSÇ 1 BİNA",
+          description: "Anahtar Teslim Bina Yapımı.",
+          image: "/msc11.webp",
         },
         {
           category: "konut",
           tag: "Yap-Sat",
-          title: "Modern Konut Projesi",
-          description:
-            "Yaşam alanı odaklı, estetik ve kullanışlı konut geliştirme.",
-          image:
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-        },
-        {
-          category: "dekorasyon",
-          tag: "Dekorasyon",
-          title: "İç Mekân Yenileme",
-          description: "Zemin, duvar, aydınlatma ve mobilya uyumlu tasarım.",
+          title: "Msç 2 Bina",
+          description: "Anahtar Teslim Bina Yapımı",
           image:
             "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
         },
         {
-          category: "seramik",
-          tag: "Seramik",
-          title: "Premium Seramik Uygulaması",
-          description:
-            "Banyo, mutfak ve zemin alanlarında detaylı seramik çözümü.",
+          category: "Konut",
+          tag: "Yap-Sat",
+          title: "MSÇ 3",
+          description: "Anahtar Teslim Bina Yapımı",
           image:
             "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        },
+
+        {
+          category: "Depo",
+          tag: "Depo",
+          title: "MSÇ Seramik Depo",
+          description: "Anahtar Teslim Depo Yapımı",
+          image: "/depo.webp",
+        },
+
+        {
+          category: "Showroom",
+          tag: "Showroom",
+          title: "Termal Seramik Showroom",
+          description: "Showroom Yapımı",
+          image: "/showroom.webp",
+        },
+
+        {
+          category: "Proje",
+          tag: "Söğüt Saat Kulesi",
+          title: "Söğüt Saat Kulesi",
+          description: "Söğüt Saat Kulesi Yapımı",
+          image: "/saatkule.webp",
+        },
+
+        {
+          category: "Otel",
+          tag: "Söğüt Termal Seramik Butik Otel",
+          title: "Söğüt Termal Seramik Butik Otel",
+          description: "Otel Yapımı",
+          image: "/otel.webp",
+        },
+
+        {
+          category: "Devlet",
+          tag: "Boztram Bakım Atölyesi",
+          title: "Boztram Bakım Atölyesi",
+          description: "Bozüyük Belediyesi Boztram Bakım Atölyesi",
+          image: "/boztram.webp",
+        },
+
+        {
+          category: "Devlet",
+          tag: "Akpınar Mahalle Konağı",
+          title: "Akpınar Mahalle Konağı",
+          description: "Bozüyük Belediyesi Mahalle Konağı Yapımı",
+          image: "/akpkonak.webp",
         },
       ],
     },
@@ -496,7 +538,7 @@ export const siteContent = {
         nameLabel: "Ad Soyad",
         namePlaceholder: "Adınızı yazın",
         phoneLabel: "Telefon",
-        phonePlaceholder: "+90 ...",
+        phonePlaceholder: "+90 532 155 58 11",
         serviceLabel: "İlgilendiğiniz Hizmet",
         selectPlaceholder: "Seçiniz",
         messageLabel: "Mesajınız",
@@ -957,120 +999,147 @@ export const siteContent = {
       // location (Konum), year (Yıl) ve detailHref ("Projeye Git" bağlantısı).
       projects: [
         {
-          category: "fabrika",
-          tag: "Fabrika",
-          title: "Endüstriyel Üretim Tesisi",
+          category: "Bina",
+          tag: "Bina",
+          title: "MSÇ 1 ",
           description:
             "Üretim ihtiyacına göre planlanan geniş açıklıklı fabrika yapısı, saha yönetimi ve teslim süreci.",
           tags: ["Planlama", "Kaba Yapı", "Teslim"],
-          image:
-            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
-          location: "Bilecik",
-          year: "2024",
+          image: "/msc11.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "endustriyel-uretim-tesisi",
         },
         {
-          category: "taahhut",
-          tag: "Taahhüt",
-          title: "Ticari Alan Uygulaması",
+          category: "Bina",
+          tag: "Bina",
+          title: "MSÇ 2",
           description:
-            "Sözleşmeye bağlı ilerleyen, teknik detayları ve uygulama adımları kontrol edilen ticari yapı çalışması.",
-          tags: ["Metraj", "Saha", "Kontrol"],
-          image:
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-          location: "Bursa",
-          year: "2024",
+            "Üretim ihtiyacına göre planlanan geniş açıklıklı fabrika yapısı, saha yönetimi ve teslim süreci.",
+          tags: ["Planlama", "Kaba Yapı", "Teslim"],
+          image: "/msc222.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "ticari-alan-uygulamasi",
         },
         {
-          category: "yapsat",
-          tag: "Yap-Sat",
-          title: "Modern Konut Projesi",
+          category: "Bina",
+          tag: "Bina",
+          title: "MSÇ 3",
           description:
-            "Satışa hazır yaşam alanı hedefiyle geliştirilen, estetik ve fonksiyonel konut uygulaması.",
+            "Üretim ihtiyacına göre planlanan geniş açıklıklı fabrika yapısı, saha yönetimi ve teslim süreci.",
           tags: ["Konut", "Mimari", "Yaşam"],
-          image:
-            "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
-          location: "Bilecik",
-          year: "2024",
+          image: "/msc333.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "modern-konut-projesi",
         },
         {
-          category: "seramik",
-          tag: "Seramik",
-          title: "Premium Seramik Uygulaması",
-          description:
-            "Banyo, mutfak ve zemin alanlarında ürün seçimi, yüzey hazırlığı ve detaylı uygulama süreci.",
+          category: "Depo",
+          tag: "Depo",
+          title: "MSÇ Seramik Depo",
+          description: "Söğütte Yapılan MSÇ Seramik Deposu",
           tags: ["Zemin", "Banyo", "Mutfak"],
-          image:
-            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-          location: "Eskişehir",
-          year: "2023",
+          image: "/depo.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "premium-seramik-uygulamasi",
         },
         {
-          category: "dekorasyon",
-          tag: "Dekorasyon",
-          title: "İç Mekân Yenileme",
+          category: "Showroom",
+          tag: "Showroom",
+          title: "Termal Seramik Showroom",
           description:
-            "Renk, malzeme, zemin, duvar ve aydınlatma detaylarıyla yenilenen modern iç mekân çalışması.",
+            "Renk, malzeme, zemin, duvar ve aydınlatma detaylarıyla yenilenen modern  mekân çalışması.",
           tags: ["İç Mekân", "Tasarım", "Yenileme"],
-          image:
-            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
-          location: "Bilecik",
-          year: "2023",
+          image: "/showroom.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "ic-mekan-yenileme",
         },
         {
-          category: "fabrika",
-          tag: "Fabrika",
-          title: "Depo ve Üretim Alanı",
+          category: "Devlet",
+          tag: "Devlet",
+          title: "Söğüt Saat Kulesi",
           description:
-            "Depolama ve üretim kapasitesi düşünülerek planlanan güçlü endüstriyel yapı uygulaması.",
+            "Söğüt'ün simgesi olan saat kulesinin yapılması ve şehre katılması",
           tags: ["Depo", "Üretim", "Alan"],
-          image:
-            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
-          location: "Bursa",
-          year: "2023",
+          image: "/saatkule.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "depo-ve-uretim-alani",
         },
         {
-          category: "taahhut",
-          tag: "Taahhüt",
-          title: "Kamu Uygulama Alanı",
-          description:
-            "Teknik şartname ve teslim kriterleri doğrultusunda ilerleyen düzenli uygulama süreci.",
+          category: "Otel",
+          tag: "Otel",
+          title: "Termal Seramik Butik Otel",
+          description: "Söğüt'te anahtar teslim butik otel yapımı",
           tags: ["Şartname", "Uygulama", "Teslim"],
-          image:
-            "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
-          location: "Bilecik",
-          year: "2022",
+          image: "/otel.webp",
+          location: "Söğüt",
+          year: "2026",
           slug: "kamu-uygulama-alani",
         },
         {
-          category: "yapsat",
-          tag: "Yap-Sat",
-          title: "Satışa Hazır Yaşam Alanı",
+          category: "Devlet",
+          tag: "Cumhuriyet Meydanı",
+          title: "Cumhuriyet Meydanı",
           description:
-            "Kullanışlı plan, estetik cephe ve satış potansiyeli düşünülerek geliştirilmiş konut projesi.",
+            "Şehrin en önemli noktasının revize edilmesi ve halka sunulması",
           tags: ["Plan", "Cephe", "Satış"],
-          image:
-            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-          location: "Eskişehir",
-          year: "2022",
+          image: "/cumhu.webp",
+          location: "Bozüyük",
+          year: "2026",
           slug: "satisa-hazir-yasam-alani",
         },
         {
-          category: "dekorasyon",
-          tag: "Dekorasyon",
-          title: "Ofis Dekorasyon Projesi",
+          category: "Devlet",
+          tag: "Hal Meydanı",
+          title: "Hal Meydanı",
           description:
-            "Çalışma verimini artıran, modern çizgilere sahip, fonksiyonel ofis iç mekân yenilemesi.",
-          tags: ["Ofis", "Modern", "Fonksiyon"],
-          image:
-            "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
-          location: "Bursa",
-          year: "2022",
+            "Şehrin en büyük ticaret alanının a'dan z'ye yapılması ve halka sunulması",
+          tags: ["Meydan", "Modern", "Fonksiyon"],
+          image: "/halmeydan.webp",
+          location: "Bozüyük",
+          year: "2026",
+          slug: "ofis-dekorasyon-projesi",
+        },
+
+        {
+          category: "Devlet",
+          tag: "Atölye",
+          title: " Boztram Bakım Atöylesi",
+          description: "Bakım Atölyesinin Yapımı",
+          tags: ["Atölye", "Modern", "Fonksiyon"],
+          image: "/boztram.webp",
+          location: "Bozüyük",
+          year: "2026",
+          slug: "ofis-dekorasyon-projesi",
+        },
+
+        {
+          category: "Devlet",
+          tag: "Mahalle Konağı",
+          title: " Akpınar Mahalle Konağı",
+          description:
+            "Tüm kapsamıyla mahalle konağının yapım süreci ve halka teslimi",
+          tags: ["Konak", "Modern", "Fonksiyon"],
+          image: "/akpkonak.webp",
+          location: "Bozüyük",
+          year: "2026",
+          slug: "ofis-dekorasyon-projesi",
+        },
+
+        {
+          category: "Devlet",
+          tag: "Mahalle Konağı",
+          title: " Yediler Mahalle Konağı",
+          description:
+            "Tüm kapsamıyla mahalle konağının yapım süreci ve halka teslimi",
+          tags: ["Konak", "Modern", "Fonksiyon"],
+          image: "/konaky.webp",
+          location: "Bozüyük",
+          year: "2026",
           slug: "ofis-dekorasyon-projesi",
         },
       ],
@@ -1332,7 +1401,7 @@ export const siteContent = {
       {
         type: "phone",
         label: "Telefon",
-        value: "+90 500 000 00 00",
+        value: "+90 532 155 58 11",
         description:
           "Hızlı bilgi almak ve proje ön görüşmesi yapmak için bizi arayın.",
         icon: "phone",
@@ -1348,7 +1417,7 @@ export const siteContent = {
       {
         type: "email",
         label: "E-posta",
-        value: "info@mscinssaat.com",
+        value: "info@mscinsaat.com",
         description:
           "Teklif, proje dosyası veya detaylı bilgi için e-posta gönderebilirsiniz.",
         icon: "mail",
@@ -1395,7 +1464,7 @@ export const siteContent = {
         name: "Ad Soyad",
         namePlaceholder: "Adınızı yazın",
         phone: "Telefon",
-        phonePlaceholder: "+90 ...",
+        phonePlaceholder: "+90 532 155 58 11",
         email: "E-posta",
         emailPlaceholder: "ornek@mail.com",
         city: "Şehir / Konum",
