@@ -23,7 +23,7 @@ interface HeroSliderProps {
 export function HeroSlider({
   slides,
   video = "/hero.mp4",
-  poster,
+  poster = "/hero-poster.webp",
 }: HeroSliderProps) {
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
