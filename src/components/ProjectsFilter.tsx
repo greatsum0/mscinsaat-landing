@@ -20,6 +20,11 @@ interface Project {
   title: string;
   description: string;
   image: string;
+  detailMedia?: {
+    type: "image" | "video";
+    src: string;
+    poster?: string;
+  };
   tags?: string[];
   location?: string;
   year?: string;
@@ -207,15 +212,9 @@ function ProjectModal({
       />
 
       <div className="relative z-10 w-full max-w-[960px] max-h-[90vh] overflow-hidden rounded-3xl bg-white shadow-[var(--shadow-medium)] grid md:grid-cols-2 animate-[modalIn_0.25s_ease]">
-        {/* Görsel */}
+        {/* Medya */}
         <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[420px]">
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 480px"
-            className="object-cover"
-          />
+          <ProjectDetailMedia project={project} />
         </div>
 
         {/* İçerik */}
@@ -261,5 +260,38 @@ function ProjectModal({
         </div>
       </div>
     </div>
+  );
+}
+
+function ProjectDetailMedia({ project }: { project: Project }) {
+  const media = project.detailMedia ?? {
+    type: "image" as const,
+    src: project.image,
+  };
+
+  if (media.type === "video") {
+    return (
+      <video
+        src={media.src}
+        poster={media.poster}
+        controls
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="h-full w-full object-cover bg-dark"
+      />
+    );
+  }
+
+  return (
+    <Image
+      src={media.src}
+      alt={project.title}
+      fill
+      sizes="(max-width: 768px) 100vw, 480px"
+      className="object-cover"
+    />
   );
 }
