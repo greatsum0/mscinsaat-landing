@@ -107,6 +107,7 @@ export default function Projelerimiz() {
             title: p.title,
             description: p.description,
             image: p.image,
+            detailMedia: p.detailMedia,
             tags: p.tags,
             location: p.location,
             year: p.year,
